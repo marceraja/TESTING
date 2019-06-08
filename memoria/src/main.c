@@ -5,7 +5,10 @@
 #include <commons/collections/list.h>
 #include <pthread.h>
 
+
+
 int main(int argc, char const *argv[]) {
+
 
   console();
 

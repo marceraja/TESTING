@@ -1,11 +1,23 @@
 // console
 #include "console.h"
 
+#define IPFILESYSTEM "192.168.0.21"
+#define PORTFILESYSTEM "8080"
+
 t_log *file_log;
+t_log *log_server;
+
+char *IP_FS = IPFILESYSTEM;
+char *PORT_FS = PORTFILESYSTEM;
+
 
 
 
 void makeCommand(char *command){
+  int control = 0;
+  t_log *file_log = crear_archivo_log("Kernel", true,"./logC");
+  int socketClient = establecerConexion(IP_FS,PORT_FS,file_log,&control);
+
   int typeCommand = getEnumFromString(command);
   switch(typeCommand)
 		{
@@ -15,6 +27,9 @@ void makeCommand(char *command){
         if((insert = cargarInsert(command))){
           //createInstruccList(insert,INSERT);
           printf("[+] Executing INSERT");
+          sleep(1);
+          printf("[+]Sending INSERT to FileSystem.\n");
+          messageAction(&typeCommand,insert,socketClient);
         }break;
       }
       case SELECT:{
@@ -25,6 +40,8 @@ void makeCommand(char *command){
         //  createInstruccList(select,SELECT);
           //log_info(file_log,"[+] Executing SELECT");----> error here too
           printf("[+] Executing SELECT.\n");
+          sleep(1);
+          printf("[+]Sending SELECT to FileSystem.\n");
         }break;
       }
     }
