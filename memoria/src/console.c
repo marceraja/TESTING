@@ -1,81 +1,45 @@
-//
-// Created by miguelchauca on 21/04/19.
-//
-#include "consola.h"
+// console
+#include "console.h"
 
-extern t_log *file_log;
-extern config *configuracion;
+t_log *file_log;
 
-void crearListInstrucciones(void *instruccion, enum OPERACION type) {
-    stinstruccion *newInstruccion = malloc(sizeof(stinstruccion));
-    newInstruccion->operacion = type;
-    newInstruccion->instruccion = instruccion;
-    t_list *listInstrucciones = list_create();
-    list_add(listInstrucciones, newInstruccion);
-    cargarNuevoScript(listInstrucciones);
+
+
+void makeCommand(char *command){
+  int typeCommand = getEnumFromString(command);
+  switch(typeCommand)
+		{
+			case INSERT:{
+				printf("[+] I got INSERT.");
+        st_insert * insert;
+        if((insert = cargarInsert(command))){
+          //createInstruccList(insert,INSERT);
+          printf("[+] Executing INSERT");
+        }break;
+      }
+      case SELECT:{
+        //log_info(file_log,"[+] I got SELECT."); ---> got error here
+        printf("[+] I got SELECT\n");
+        st_select * select;
+        if((select = cargarSelect(command))){
+        //  createInstruccList(select,SELECT);
+          //log_info(file_log,"[+] Executing SELECT");----> error here too
+          printf("[+] Executing SELECT.\n");
+        }break;
+      }
+    }
+
 }
 
-void armarComando(char *comando) {
-    bool flagErrorSintaxis = false;
-    int typeComando = getEnumFromString(comando);
-    switch (typeComando) {
-        case INSERT: {
-            structInsert *insert;
-            flagErrorSintaxis = true;
-            if ((insert = cargarInsert(comando, true))) {
-                crearListInstrucciones(insert, INSERT);
-                log_info(file_log, "EJECUTANDO COMANDO INSERT");
-                flagErrorSintaxis = false;
-            }
-            break;
-        }
-        case SELECT: {
-            structSelect *_select;
-            flagErrorSintaxis = true;
-            if ((_select = cargarSelect(comando))) {
-                crearListInstrucciones(_select, SELECT);
-                flagErrorSintaxis = false;
-                log_info(file_log, "EJECUTANDO COMANDO INSERT");
-            }
-            break;
-        }
-        case DROP: {
-            structDrop *_drop;
-            flagErrorSintaxis = true;
-            if ((_drop = cargarDrop(comando))) {
-                crearListInstrucciones(_drop, DROP);
-                flagErrorSintaxis = false;
-                log_info(file_log, "EJECUTANDO COMANDO SELECT");
-            }
-            break;
-        }
-        case CREATE: {
-            structCreate *_create;
-            flagErrorSintaxis = true;
-            if ((_create = cargarCreate(comando))) {
-                crearListInstrucciones(_create, CREATE);
-                flagErrorSintaxis = false;
-                log_info(file_log, "EJECUTANDO COMANDO SELECT");
-            }
-            break;
-        }
-        default: {
-            log_error(file_log, "Comando no reconocido");
-        }
-    }
-
-    if (flagErrorSintaxis) {
-        log_error(file_log, "Verificar el comando ingresado");
-    }
-}
-
-void consola() {
-    char *comando;
-    comando = readline(">");
-    printf("Ingrese comando LQL\n");
-    while (strcmp(comando, "exit") != 0) {
-        armarComando(comando);
-        free(comando);
-        comando = readline(">");
-    }
+void console(){
+  char *command ;
+  printf("[+] Write a LQL command: \n");
+  command = readline("[>] ");
+  while(strcmp(command,"exit") != 0){
+    makeCommand(command);
+    free(command);
+    printf("------------------------------\n");
+    command = readline("[>] ");
+  }
+  printf("[-] Exiting console\n" );
 }
