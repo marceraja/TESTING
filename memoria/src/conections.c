@@ -35,8 +35,6 @@ void messageAction(header *req, void *buffer, int socketClient) {
           printf("[+] We got a SELECT\n");
           printf("[+] Table [%s]\n", select->nameTable);
           printf("[+] Key [%d]\n", select->key);
-        //  printf("[+] Value [%s]\n", select->value);
-        //  printf("[+] TimeStamp [%d]\n", select->timestamp);
           response.letra = 'M';
           response.codigo = 1;
           response.sizeData = 0;

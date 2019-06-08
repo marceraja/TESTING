@@ -46,7 +46,7 @@ void *start_server(char PORT){
 
     printf("[+] Memory [ID: %d] connected\n", client );
 
-    while(TRUE){
+    while(true){
       header request;
 
       void * recibido;
@@ -62,8 +62,5 @@ void *start_server(char PORT){
     }
 
     fclose(client);
-
-    //leerMensaje(recibido,request);
-
 
   }

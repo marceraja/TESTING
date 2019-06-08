@@ -16,7 +16,7 @@
 #include <commons/collections/list.h>
 #include "conections.c"
 
-void *start_server(char PORT);
-void driver(char *command,int socketClient);
+void *start_server(char *PORT);
+void driver(void *recibido,header request);
 
 #endif //MEM_SERVER_H
