@@ -1,0 +1,4 @@
+[INFO] 15:07:16:500 Kernel/(13583:13583): Se crea el archivo de log
+[INFO] 15:07:16:501 Kernel/(13583:13583): getting handshake..
+[ERROR] 15:07:19:568 Kernel/(13583:13583): Error conectando socket
+[ERROR] 15:07:19:568 Kernel/(13583:13583): Failed to connect.

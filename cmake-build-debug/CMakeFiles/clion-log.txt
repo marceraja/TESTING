@@ -1,0 +1,11 @@
+/root/Descargas/clion-2019.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc"
+-- The C compiler identification is GNU 8.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug

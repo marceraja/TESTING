@@ -1,0 +1,3 @@
+/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/memoria/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/memoria/cmake-build-debug/CMakeFiles/memoria.dir
+/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/memoria/cmake-build-debug/CMakeFiles/edit_cache.dir

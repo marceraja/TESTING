@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.13)
+project(Kernel C)
+
+set(CMAKE_C_STANDARD 11)
+set(PATH_KERNEL "./kernel/src")
+set(PATH_FUNCIONES_COMPARTIDAS "./funcionesCompartidas/funcionesCompartidas")
+set(PATH_FILESYSTEM "./FileSystem/src")
+set(PATH_FILE_EXAMPLE "./example/listaMemoria.c")
+FILE(GLOB FILE_KERNEL ${PATH_KERNEL}/*.c ${PATH_KERNEL}/*.h)
+FILE(GLOB FILE_FUNCIONES_COMPARTIDAS ${PATH_FUNCIONES_COMPARTIDAS}/*.c)
+FILE(GLOB FILE_FILESYSTEM ${PATH_FILESYSTEM}/*.c ${PATH_FILESYSTEM}/*.h)
+add_executable(Kernel ${PATH_FILE_EXAMPLE} ${FILE_FUNCIONES_COMPARTIDAS})
+target_link_libraries(Kernel -lreadline -lpthread -lcommons -lcompartidas)

@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/memoria.dir/src/memoria.c.o  -o memoria -lreadline -lpthread -lcommons -lcompartidas 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Kernel"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kernel">
+				<Option output="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Kernel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kernel"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Kernel/fast">
+				<Option output="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Kernel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 Kernel/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/root/bodhi/Facultad/Sistemas\ Operativos/TP0/tp-2019-1c-misc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/API.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/API.h">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/funcionesNET.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/funcionesNET.h">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/log.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/funcionesCompartidas/funcionesCompartidas/log.h">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/kernel/src/consola.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/kernel/src/consola.h">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/kernel/src/load_config.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/kernel/src/load_config.h">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/kernel/src/main.c">
+			<Option target="Kernel"/>
+		</Unit>
+		<Unit filename="/media/root/bodhi/Facultad/Sistemas Operativos/TP0/tp-2019-1c-misc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
