@@ -30,3 +30,5 @@
 [ERROR] 04:14:50:969 Kernel/(8934:8934): Error conectando socket
 [INFO] 04:15:02:376 Kernel/(8934:8934): Se crea el archivo de log
 [ERROR] 04:15:02:377 Kernel/(8934:8934): Error conectando socket
+[INFO] 09:38:51:775 Kernel/(2197:2197): Se crea el archivo de log
+[ERROR] 09:38:54:799 Kernel/(2197:2197): Error conectando socket

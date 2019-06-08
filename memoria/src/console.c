@@ -1,23 +1,7 @@
 // console
 #include "console.h"
 
-#define IPFILESYSTEM "192.168.0.21"
-#define PORTFILESYSTEM "8080"
-
-t_log *file_log;
-t_log *log_server;
-
-char *IP_FS = IPFILESYSTEM;
-char *PORT_FS = PORTFILESYSTEM;
-
-
-
-
-void makeCommand(char *command){
-  int control = 0;
-  t_log *file_log = crear_archivo_log("Kernel", true,"./logC");
-  int socketClient = establecerConexion(IP_FS,PORT_FS,file_log,&control);
-
+void makeCommand(char *command,int socketClient){
   int typeCommand = getEnumFromString(command);
   switch(typeCommand)
 		{
@@ -48,12 +32,12 @@ void makeCommand(char *command){
 
 }
 
-void console(){
+void console(int socket){
   char *command ;
   printf("[+] Write a LQL command: \n");
   command = readline("[>] ");
   while(strcmp(command,"exit") != 0){
-    makeCommand(command);
+    makeCommand(command,socket);
     free(command);
     printf("------------------------------\n");
     command = readline("[>] ");
